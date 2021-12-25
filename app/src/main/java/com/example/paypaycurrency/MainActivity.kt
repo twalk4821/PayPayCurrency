@@ -14,8 +14,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    val currenciesList: List<String> = SUPPORTED_CURRENCIES.split(',')
-    var selectedCurrency: String = currenciesList[0]
+    private val currenciesList: List<String> = SUPPORTED_CURRENCIES.split(',')
 
     var recyclerView: RecyclerView? = null
     var editText: EditText? = null
